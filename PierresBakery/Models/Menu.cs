@@ -42,5 +42,9 @@ namespace PierresBakery.Models.Menus
     {
       Order.Add(Pastries[input]);
     }
+    public void AddBreadToOrder(int input)
+    {
+      Order.Add(Pastries[input]);
+    }
   }
 }
