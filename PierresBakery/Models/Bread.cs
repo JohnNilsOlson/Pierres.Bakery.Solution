@@ -15,6 +15,8 @@ namespace PierresBakery.Models.Breads
 
       Type = breadTypes[num];
       Price = 5;
+
+      breadTypes.Remove(num);
     }
   }
 }

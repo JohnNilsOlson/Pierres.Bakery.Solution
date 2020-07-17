@@ -15,6 +15,8 @@ namespace PierresBakery.Models.Pastries
 
       Type = pastryTypes[num];
       Price = 2;
+
+      pastryTypes.Remove(num);
     }
   }
 }
