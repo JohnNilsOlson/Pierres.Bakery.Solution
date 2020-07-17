@@ -19,12 +19,5 @@ namespace Pastries.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(string), (newPastry.Type).GetType());
     }
-
-    [TestMethod]
-    public void PastryConstructor_CreatesInstanceOfPastryWithPrice_Int()
-    {
-      Pastry newPastry = new Pastry();
-      Assert.AreEqual(2, newPastry.Price);
-    }
   }
 }

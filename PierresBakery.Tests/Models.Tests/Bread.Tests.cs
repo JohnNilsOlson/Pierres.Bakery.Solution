@@ -18,12 +18,5 @@ namespace Breads.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(string), (newBread.Type).GetType());
     }
-
-    [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBreadWithPrice_Int()
-    {
-      Bread newBread = new Bread();
-      Assert.AreEqual(5, newBread.Price);
-    }
   }
 }
