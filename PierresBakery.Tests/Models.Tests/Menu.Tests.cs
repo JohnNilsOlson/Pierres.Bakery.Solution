@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using PierresBakery.Models.Menus;
-using PierresBakery.Models.Breads;
 
 namespace Menus.Tests
 {
@@ -20,7 +18,7 @@ namespace Menus.Tests
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      Assert.AreEqual(1, (todaysMenu.Breads).Count);
+      Assert.IsTrue(0 < (todaysMenu.Breads).Count);
     }
 
     [TestMethod]
@@ -28,7 +26,7 @@ namespace Menus.Tests
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      Assert.AreEqual(1, (todaysMenu.Pastries).Count);
+      Assert.IsTrue(0 < (todaysMenu.Pastries).Count);
     }
   }
 }
