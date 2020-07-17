@@ -38,9 +38,9 @@ namespace PierresBakery.Models.Menus
       j++;
       }
     }
-    public void AddToOrder()
+    public void AddPastryToOrder(int input)
     {
-
+      Order.Add(Pastries[input]);
     }
   }
 }
