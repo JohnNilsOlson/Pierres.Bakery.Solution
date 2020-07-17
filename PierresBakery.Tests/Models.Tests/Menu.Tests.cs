@@ -56,5 +56,17 @@ namespace Menus.Tests
       todaysMenu.CalculateOrderTotal();
       Assert.AreEqual(7, todaysMenu.OrderTotal);
     }
+
+    [TestMethod]
+    public void ApplyDiscount_AppliesDiscountToOrderTotalForBread_Int()
+    {
+      Menu todaysMenu = new Menu();
+      todaysMenu.BuildMenu();
+      todaysMenu.AddBreadToOrder(0);
+      todaysMenu.AddBreadToOrder(0);
+      todaysMenu.AddBreadToOrder(0);
+      todaysMenu.CalculateOrderTotal();
+      Assert.AreEqual(10, todaysMenu.OrderTotal);
+    }
   }
 }
