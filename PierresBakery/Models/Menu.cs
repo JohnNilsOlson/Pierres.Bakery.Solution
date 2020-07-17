@@ -13,5 +13,9 @@ namespace PierresBakery.Models.Menus
       Breads = new List<Bread>();
       Pastries = new List<Pastry>();
     }
+    public void BuildMenu()
+    {
+      
+    }
   }
 }
