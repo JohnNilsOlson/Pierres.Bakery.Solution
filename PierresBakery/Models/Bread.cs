@@ -7,7 +7,6 @@ namespace PierresBakery.Models.Breads
   {
     private Dictionary<int, string> breadTypes = new Dictionary<int, string>() {{1, "rye"}, {2, "sourdough"}, {3, "whole grain"}, {4, "baguette"}, {5, "ciabatta"}, {6, "challah"}, {7, "cornbread"}, {8, "banana"}, {9, "brioche"}, {10, "foccacia"}};
     public string Type { get; set; }
-    public int Price { get; set; }
     public Bread()
     {
       Random rnd = new Random();
