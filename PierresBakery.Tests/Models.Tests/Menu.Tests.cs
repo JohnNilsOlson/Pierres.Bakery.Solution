@@ -30,19 +30,19 @@ namespace Menus.Tests
     }
 
     [TestMethod]
-    public void AddToOrder_AddsPastryToOrder_True()
+    public void AddPastryToOrder_AddsPastryToOrder_True()
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      todaysMenu.AddPastryToOrder(1);
+      todaysMenu.AddPastryToOrder(0);
       Assert.IsTrue(0 < (todaysMenu.Order).Count);
     }
     [TestMethod]
-    public void AddToOrder_AddsBreadToOrder_True()
+    public void AddBreadToOrder_AddsBreadToOrder_True()
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      todaysMenu.AddBreadToOrder(1);
+      todaysMenu.AddBreadToOrder(0);
       Assert.IsTrue(0 < (todaysMenu.Order).Count);
     }
 
@@ -51,8 +51,8 @@ namespace Menus.Tests
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      todaysMenu.AddBreadToOrder(1);
-      todaysMenu.AddPastryToOrder(1);
+      todaysMenu.AddBreadToOrder(0);
+      todaysMenu.AddPastryToOrder(0);
       todaysMenu.CalculateOrderTotal();
       Assert.AreEqual(7, todaysMenu.OrderTotal);
     }

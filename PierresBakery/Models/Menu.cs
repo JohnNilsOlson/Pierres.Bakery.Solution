@@ -10,11 +10,13 @@ namespace PierresBakery.Models.Menus
     public List<Bread> Breads { get; set; }
     public List<Pastry> Pastries {get; set; }
     public List<Object> Order { get; set; }
+    public int OrderTotal { get; set; }
     public Menu()
     {
       Breads = new List<Bread>();
       Pastries = new List<Pastry>();
       Order = new List<Object>();
+      OrderTotal = 0;
     }
     public void BuildMenu()
     {
@@ -44,7 +46,21 @@ namespace PierresBakery.Models.Menus
     }
     public void AddBreadToOrder(int input)
     {
-      Order.Add(Pastries[input]);
+      Order.Add(Breads[input]);
+    }
+    public void CalculateOrderTotal()
+    {
+      foreach (Object obj in Order)
+      {
+        if (obj.GetType() == typeof(Bread))
+        {
+          OrderTotal += 5;
+        }
+        else
+        {
+          OrderTotal += 2;
+        }
+      }
     }
   }
 }
