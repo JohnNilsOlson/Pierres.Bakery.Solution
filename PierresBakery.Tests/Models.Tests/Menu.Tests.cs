@@ -45,5 +45,16 @@ namespace Menus.Tests
       todaysMenu.AddBreadToOrder(1);
       Assert.IsTrue(0 < (todaysMenu.Order).Count);
     }
+
+    [TestMethod]
+    public void CalculateOrderTotal_CalculatesValueOfOrder_Int()
+    {
+      Menu todaysMenu = new Menu();
+      todaysMenu.BuildMenu();
+      todaysMenu.AddBreadToOrder(1);
+      todaysMenu.AddPastryToOrder(1);
+      todaysMenu.CalculateOrderTotal();
+      Assert.AreEqual(7, todaysMenu.OrderTotal);
+    }
   }
 }
