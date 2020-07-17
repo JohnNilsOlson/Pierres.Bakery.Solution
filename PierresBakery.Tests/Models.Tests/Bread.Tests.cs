@@ -9,15 +9,14 @@ namespace Breads.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread();
+      Bread newBread = new Bread("rye");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
-
     [TestMethod]
-    public void SetPrice_AppliesPriceValueToBread_Int()
+    public void BreadConstructor_CreatesInstanceOfBreadWithType_Type()
     {
-      Bread newBread = new Bread();
-      Assert.AreEqual(5, newBread.Price);
+      Bread newBread = new Bread("rye");
+      Assert.AreEqual("rye", newBread.Type);
     }
   }
 }
