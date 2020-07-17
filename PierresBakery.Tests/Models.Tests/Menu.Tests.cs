@@ -66,6 +66,7 @@ namespace Menus.Tests
       todaysMenu.AddBreadToOrder(0);
       todaysMenu.AddBreadToOrder(0);
       todaysMenu.CalculateOrderTotal();
+      todaysMenu.ApplyDiscount();
       Assert.AreEqual(10, todaysMenu.OrderTotal);
     }
   }

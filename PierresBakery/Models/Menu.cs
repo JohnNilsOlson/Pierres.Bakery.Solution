@@ -62,5 +62,18 @@ namespace PierresBakery.Models.Menus
         }
       }
     }
+    public void ApplyDiscount()
+    {
+      int breadCount = 0;
+      foreach (Object obj in Order)
+      {
+        if (obj.GetType() == typeof(Bread))
+        {
+          breadCount += 1;
+        }
+      }
+      int breadDiscount = (breadCount - (breadCount % 3));
+      OrderTotal -= (5 * (breadDiscount / 3));
+    }
   }
 }
