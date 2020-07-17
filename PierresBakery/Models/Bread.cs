@@ -14,8 +14,6 @@ namespace PierresBakery.Models.Breads
       int num  = rnd.Next(1, 10);
 
       Type = breadTypes[num];
-      Price = 5;
-
       breadTypes.Remove(num);
     }
   }

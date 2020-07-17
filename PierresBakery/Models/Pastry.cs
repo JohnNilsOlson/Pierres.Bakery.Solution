@@ -14,8 +14,6 @@ namespace PierresBakery.Models.Pastries
       int num  = rnd.Next(1, 10);
 
       Type = pastryTypes[num];
-      Price = 2;
-
       pastryTypes.Remove(num);
     }
   }
