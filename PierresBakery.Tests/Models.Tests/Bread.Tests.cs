@@ -12,5 +12,12 @@ namespace Breads.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+
+    [TestMethod]
+    public void SetPrice_AppliesPriceValueToBread_Int()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(5, newBread.Price);
+    }
   }
 }
