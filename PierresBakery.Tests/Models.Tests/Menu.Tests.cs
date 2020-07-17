@@ -30,11 +30,11 @@ namespace Menus.Tests
     }
 
     [TestMethod]
-    public void AddToOrder_AddsPastriesAndBreadsToList_True()
+    public void AddToOrder_AddsPastryToOrder_True()
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
-      todaysMenu.AddToOrder();
+      todaysMenu.AddPastryToOrder(1);
       Assert.IsTrue(0 < (todaysMenu.Order).Count);
     }
   }
