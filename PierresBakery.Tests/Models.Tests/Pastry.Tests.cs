@@ -9,21 +9,21 @@ namespace Pastries.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry("croissant", 2);
+      Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastryWithType_String()
     {
-      Pastry newPastry = new Pastry("croissant", 2);
-      Assert.AreEqual("croissant", newPastry.Type);
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(string), (newPastry.Type).GetType());
     }
 
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastryWithPrice_Int()
     {
-      Pastry newPastry = new Pastry("croissant", 2);
+      Pastry newPastry = new Pastry();
       Assert.AreEqual(2, newPastry.Price);
     }
   }
