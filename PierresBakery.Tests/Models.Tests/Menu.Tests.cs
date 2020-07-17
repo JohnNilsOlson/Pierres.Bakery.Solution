@@ -22,5 +22,13 @@ namespace Menus.Tests
       todaysMenu.BuildMenu();
       Assert.AreEqual(1, (todaysMenu.Breads).Count);
     }
+
+    [TestMethod]
+    public void BuildMenu_AddsPastryToList_List()
+    {
+      Menu todaysMenu = new Menu();
+      todaysMenu.BuildMenu();
+      Assert.AreEqual(1, (todaysMenu.Pastries).Count);
+    }
   }
 }
