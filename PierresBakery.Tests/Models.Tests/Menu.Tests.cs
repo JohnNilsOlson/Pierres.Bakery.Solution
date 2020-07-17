@@ -14,7 +14,7 @@ namespace Menus.Tests
     }
 
     [TestMethod]
-    public void BuildMenu_AddsBreadsToList_List()
+    public void BuildMenu_AddsBreadsToList_True()
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
@@ -22,11 +22,20 @@ namespace Menus.Tests
     }
 
     [TestMethod]
-    public void BuildMenu_AddsPastryToList_List()
+    public void BuildMenu_AddsPastryToList_True()
     {
       Menu todaysMenu = new Menu();
       todaysMenu.BuildMenu();
       Assert.IsTrue(0 < (todaysMenu.Pastries).Count);
+    }
+
+    [TestMethod]
+    public void AddToOrder_AddsPastriesAndBreadsToList_True()
+    {
+      Menu todaysMenu = new Menu();
+      todaysMenu.BuildMenu();
+      todaysMenu.AddToOrder();
+      Assert.IsTrue(0 < (todaysMenu.Order).Count);
     }
   }
 }

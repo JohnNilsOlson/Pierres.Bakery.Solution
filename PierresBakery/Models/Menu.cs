@@ -9,10 +9,12 @@ namespace PierresBakery.Models.Menus
   {
     public List<Bread> Breads { get; set; }
     public List<Pastry> Pastries {get; set; }
+    public List<Object> Order { get; set; }
     public Menu()
     {
       Breads = new List<Bread>();
       Pastries = new List<Pastry>();
+      Order = new List<Object>();
     }
     public void BuildMenu()
     {
@@ -35,6 +37,10 @@ namespace PierresBakery.Models.Menus
       Pastries.Add(newPastry);
       j++;
       }
+    }
+    public void AddToOrder()
+    {
+
     }
   }
 }
