@@ -1,11 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models.Breads;
 using PierresBakery.Models.Pastries;
 
-namespace Menus
+namespace PierresBakery.Models.Menus
 {
-  public class Menus
+  public class Menu
   {
-    
+    public Menu()
+    {
+
+    }
   }
 }
