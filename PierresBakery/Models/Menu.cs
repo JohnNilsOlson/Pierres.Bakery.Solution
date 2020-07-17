@@ -17,6 +17,9 @@ namespace PierresBakery.Models.Menus
     {
       Bread newBread = new Bread();
       Breads.Add(newBread);
+
+      Pastry newPastry = new Pastry();
+      Pastries.Add(newPastry);
     }
   }
 }
