@@ -23,8 +23,6 @@ A console application where the user can order baked goods from Pierre's Bakery.
 | Program calculates order total | - | "1 Example Bread, 3 Example Pastries: $11.00 |
 | Program calculates order total with discounts | - | "1 Example Bread, 3 Example Pastries: $10.00 |
 
-
-
 ## _Technologies Used_
 C#  
 .NET
@@ -34,17 +32,21 @@ C#
   1. Open Git Bash.
   2. Change the current working directory to the location where you would like to clone the repository.
   3. Type "git clone" followed by "https://github.com/JohnNilsOlson/Pierres.Bakery.Solution" (without quotes) and hit enter.
-  4. Open directory with code editor of choice.
-  5. In the terminal, change working directory to ./PierresBakery.
-  6. Type "dotnet run".
 
 * Download instructions.
   1. Visit "https://github.com/JohnNilsOlson/Pierres.Bakery.Solution".
   2. Click the green "code" button and download zip file of project.
   3. Extract zip file to directory of choice.
-  4. Open project directory in code editor of choice.
-  5. In the terminal, change working directory to ./PierresBakery.
-  6. Type "dotnet run".
+
+* Instructions to run program.
+  1. Open project directory in code editor of choice.
+  2. In the terminal, change working directory to ./PierresBakery.
+  3. Type "dotnet run".
+
+* Instructions to run model tests.
+  1. Open project directory in code editor of choice.
+  2. In the terminal, change working directory to ./PierresBakery.Tests.
+  3. Type "dotnet test".
 
 ## _Bugs_
 Version 1.0 - Randomly generated menus should not include duplicates.
