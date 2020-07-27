@@ -1,6 +1,6 @@
 # _Pierre's Bakery_
 Epicodus Week 8 Independent Project  
-Version 1.0 - July 17, 2020 
+Version 1.1 - July 17, 2020 
 
 ## _Project Description_
 An exploration of test driven developement utilizing C# and .NET framework.
@@ -50,6 +50,7 @@ C#
 
 ## _Bugs_
 Version 1.0 - Randomly generated menus should not include duplicates.
+Version 1.1 - Duplicated menu items fixed.
 
 ## _Contact Information_
 JohnNils Olson - johnnils@gmail.com
