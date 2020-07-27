@@ -27,17 +27,23 @@ namespace PierresBakery.Models.Menus
       int i = 0;
       while (i < numBread)
       {
-      Bread newBread = new Bread();
-      Breads.Add(newBread);
-      i++;
+        Bread newBread = new Bread();
+        if (newBread.Type != null)
+        {
+          Breads.Add(newBread);
+        }
+        i++;
       }
 
       int j = 0;
       while (j < numPastry)
       {
-      Pastry newPastry = new Pastry();
-      Pastries.Add(newPastry);
-      j++;
+        Pastry newPastry = new Pastry();
+        if (newPastry.Type != null)
+        {
+          Pastries.Add(newPastry);
+        }
+        j++;
       }
     }
     public void AddPastryToOrder(int input)
