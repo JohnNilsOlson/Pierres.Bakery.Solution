@@ -45,7 +45,7 @@ C#
 
 * Instructions to run model tests.
   1. Open project directory in code editor of choice.
-  2. In the terminal, change working directory to ./PierresBakery.Tests.
+  2. In the terminal, change working directory to ./PierresBakeryTests.
   3. Type "dotnet test".
 
 ## _Bugs_
