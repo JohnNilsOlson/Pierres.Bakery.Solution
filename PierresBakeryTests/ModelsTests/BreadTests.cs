@@ -18,5 +18,12 @@ namespace Breads.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(string), (newBread.Type).GetType());
     }
+
+    [TestMethod]
+    public void BreadConstructor_RemovesEntryFromTypeDictionary_True()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(9, newBread.breadTypes.Count);
+    }
   }
 }
